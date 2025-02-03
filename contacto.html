@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./public/assets/images/icons8-código-fuente-48.png" type="image/x-icon" />
+    <title>David Arrebola/Contacto</title>
+    <link rel="stylesheet" href="contacStyle.css" />
+    <script src="/contacto.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Contacto</h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./biografia.html">Biografía</a></li>
+            <li><a href="./porfolio.html">Porfolio</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="contacto-container">
+        <article>
+          <p>Si deseas que me ponga en contacto contigo o prefieres dejarme un mensaje, Rellena el formulario!!</p>
+        </article>
+      </section>
+      <section>
+        <div class="form-container">
+          <article>
+            <h2>Formulario para contactar</h2>
+            <form action="#contacto" method="post">
+              <label for="nombre">Nombre</label>
+              <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre..." maxlength="50" autofocus />
+              <label for="apellidos">Apellidos</label>
+              <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos..." maxlength="50" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="example@example.example" maxlength="50" />
+              <label for="sexo">Sexo</label>
+              <div class="sexo-container">
+                <div><input type="radio" name="sexo" value="Hombre" /><label for="hombre">Hombre</label></div>
+                <div><input type="radio" name="sexo" value="Mujer" /><label for="mujer">Mujer</label></div>
+              </div>
+              <label for="telefono">Teléfono</label>
+              <input type="number" name="telefono" id="telefono" placeholder="1234567890" />
+              <label for="mensaje">Deja tu mensaje</label>
+              <textarea name="mensjae" id="mensaje" placeholder="Escribe aqui tu mensaje..." maxlength="250" rows="4"></textarea>
+              <div class="btn-container">
+                <input type="submit" value="Enviar" id="btnSubmit" />
+              </div>
+            </form>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <p>¿Tienes una idea? ¿Te gustaría contarme algo?</p>
+        <p>Ponte en contacto conmigo de la manera que quieras.</p>
+        <a href="./contacto.html"> 👉 Contáctame</a>
+      </footer>
+    </main>
+  </body>
+</html>
